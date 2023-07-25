@@ -1,9 +1,5 @@
 /* Estilos generales para toda la página */
 
-@font-face {
-  font-family: 'OTF GLUSP';
-  src: url('font/mamenchisa-hnt00t.otf') format('opentype');
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -12,10 +8,39 @@ body {
   color: #fff;
 }
 
+/* Resto de los estilos generales para toda la página */
+
+@font-face {
+  font-family: 'OTF GLUSP';
+  src: url('font/mamenchisa-hnt00t.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Wild World';
+  src: url('font/mamenchisa-hnt00t.otf') format('truetype'); /* Ajusta la ruta según la ubicación del archivo de fuente */
+}
+
 h1 {
   font-family: 'OTF GLUSP', Arial, sans-serif;
   font-size: 150px;
+  /* Resto de los estilos para el h1 */
 }
+
+h2.custom-font {
+  font-size: 36px; /* Tamaño de fuente para el h2 */
+  font-family: 'Wild World', Arial, sans-serif; /* Utiliza la fuente Wild World, si no está disponible, usará Arial o una fuente sans-serif por defecto */
+  /* Resto de los estilos para el h2 */
+  text-align: center;
+  margin: 0;
+}
+.container {
+  display: flex; /* Utiliza el modelo de caja flex para el contenedor */
+  justify-content: center; /* Centra el contenido horizontalmente en el contenedor */
+  align-items: center; /* Centra el contenido verticalmente en el contenedor */
+  height: 200px; /* Establece la altura del contenedor al 100% del alto de la ventana */
+
+}
+/* Resto de los estilos */
 
 /* Resto de los estilos */
 
@@ -127,3 +152,42 @@ header::before {
 
   /* Otros ajustes de estilos para dispositivos móviles aquí */
 }
+
+
+
+
+
+
+
+
+
+
+/* Resto de los estilos generales para toda la página */
+
+/* Estilo del contenedor del botón de Instagram */
+.instagram-container {
+  text-align: center; /* Centra el contenido horizontalmente en el contenedor */
+  margin-top: 20px; /* Espacio superior para separar del contenido anterior */
+  
+}
+
+/* Estilo del enlace con el logo de Instagram */
+.instagram-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: transparent; /* Fondo transparente para el enlace */
+  margin-top: -20px;
+}
+
+.instagram-button img {
+  width: 30px; /* Ajusta el tamaño del logo según tus preferencias */
+  height: 30px;
+ 
+}
+
+/* Cambiar el color del logo al pasar el cursor */
+.instagram-button img:hover {
+  filter: brightness(0.8); /* Reduce el brillo del logo al pasar el cursor */
+}
+
+/* Resto de los estilos */
